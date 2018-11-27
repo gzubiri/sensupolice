@@ -1,0 +1,12 @@
+{
+"checks": {
+    "metrics_net-usage": {
+      "type": "metric",
+      "command": "/opt/sensu/embedded/bin/metrics-net.rb --scheme :::name:::.network",
+      "interval": 60,
+      "output_format": "graphite_plaintext",
+      "subscribers": [ "development" ],
+      "handlers": [ "graphite" ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"checks": {
+		"check_nic": {
+			"command": "/etc/sensu/conf.d/nic.sh",
+			"standalone": true,
+			"interval": 60
+		}
+	}
+}

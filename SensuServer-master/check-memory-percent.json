@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "memory_check": {
+      "command": "/opt/sensu/embedded/bin/check-memory-percent.rb -w 92 -c 97",
+      "subscribers": [ "dev" ],
+      "interval": 60
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "metrics_memory-usage": {
+      "type": "metric",
+      "command": "m/opt/sensu/embedded/bin/metrics-memory.rb --scheme :::name:::.memory_usage",
+      "interval": 60,
+      "output_format": "graphite_plaintext",
+      "subscribers": [ "development" ],
+      "handlers": [ "graphite" ]
+    }
+  }
+}

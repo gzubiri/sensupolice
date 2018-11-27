@@ -1,0 +1,9 @@
+{
+"checks": {
+    "port_check": {
+      "command": "/opt/sensu/embedded/bin/check-ports.rb -p 3000 -t 10",
+      "subscribers": [ "development" ],
+      "interval": 60
+    }
+  }
+}

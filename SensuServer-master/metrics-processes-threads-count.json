@@ -1,0 +1,12 @@
+{
+"checks": {
+    "metrics_processes-count": {
+      "type": "metric",
+      "command": "metrics-processes-threads-count.rb --scheme :::name:::.processes",
+      "interval": 60,
+      "output_format": "graphite_plaintext",
+      "subscribers": [ "development" ],
+      "handlers": [ "graphite" ]
+    }
+  }
+}
